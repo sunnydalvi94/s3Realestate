@@ -1,0 +1,69 @@
+.contact-container {
+    overflow-x: hidden;
+    color: $black;
+    height: 100%;
+    text-align: center;
+    margin-top: 40px;
+
+    .badge-title {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .conatct-add {
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        padding: 20px 10px 20px 40px;
+        background-color: #f9fcff;
+        box-shadow: 0px 0px 6px -2px #495057 !important;
+        margin-bottom: 10px;
+        .add-part {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: flex-start;
+            align-items: flex-start;
+            text-align: left;
+            line-height: 1.9;
+            color: #495057;
+            font-size: 18px;
+        }
+        .add-part3 {
+            @extend .add-part;
+            line-height: 1.5;
+            img {
+                margin-right: 9px;
+                margin-top: 5.5px;
+            }
+        }
+        img {
+            width: 20px;
+            height: 20px;
+        }
+    }
+    .contact-map {
+        border-left: none;
+        padding: 10px;
+        background-color: #f9fcff;
+        box-shadow: 0px 0px 6px -2px #495057 !important;
+    }
+
+    @media (max-width: 770px) {
+        .conatct-add {
+            margin-bottom: 10px;
+            height: 290px !important;
+            margin-bottom: 10px !important;
+            padding: 20px 10px 20px 25px !important;
+            box-shadow: 0px 0px 6px -2px #495057 !important;
+        }
+    }
+
+    .contact-map {
+        border-left: none;
+        padding: 10px;
+        background-color: #f9fcff;
+        box-shadow: 0px 0px 6px -2px #495057 !important;
+    }
+}

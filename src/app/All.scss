@@ -1,0 +1,28 @@
+@import "bootstrap/scss/bootstrap";
+@import "./assets/globals/colors";
+@import "./assets/globals/animation";
+@import "./component/header/header.scss";
+@import "./component/home/home.scss";
+@import "./component/about/About.scss";
+@import "./component/project/Projest.scss";
+@import "./component/services/Services.scss";
+@import "./component/enquiry/Enquiry.scss";
+@import "./component/footer/Footer.scss";
+@import "./component/contact/Contact.scss";
+@import "./component/career/Careers.scss";
+@import "./component/gallary/Gallary.scss";
+
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  background-color: #e9ecef;
+}

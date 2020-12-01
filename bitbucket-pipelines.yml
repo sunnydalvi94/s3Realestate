@@ -1,0 +1,23 @@
+# This is an example Starter pipeline configuration
+# Use a skeleton to build, test and deploy using manual and parallel steps
+# -----
+# You can specify a custom docker image from Docker Hub as your build environment.
+image: node:10.15.3
+
+pipelines:
+  default:
+    - parallel:
+      - step:
+          name: 'npm install'
+          script:
+            - echo "installing npm modules..."
+            - npm install
+            - CI=false
+            - npm run build
+            - echo "Making Prod Build..."
+            - echo "deploying firebase..."
+            - pipe: atlassian/firebase-deploy:0.3.0
+              variables:
+                FIREBASE_TOKEN: '$FIREBASE_TOKEN_CI'
+            
+            

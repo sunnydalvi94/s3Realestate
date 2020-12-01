@@ -1,0 +1,47 @@
+.footer-container{
+    bottom: 0;
+    background-color: $headerBackgrond;
+    color:$white;
+    width:100%;
+    text-align: center;
+    display: grid;
+
+    .footer-logo {
+        background-clip: border-box;
+        position: relative;
+        display: flex;
+        flex: 1 0 0%;
+        flex: row wrap;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 5px;
+
+        .logo-items {
+            width: 20px;
+            height: 20px;
+            margin: 5px;
+            border: 1px solid $white;
+            border-radius: 60%;
+            background-color: $white;
+        }
+        .logo-items:hover {
+            border: 1px solid $primary;
+            background-color: $primary;
+        }
+        .icon-wrapper{
+            display: flex;
+
+            .icon-margin{
+                margin: 0px 1rem;
+            }
+        }
+    }
+    .copy-right{
+        color:$lightGray;
+        font-size: 14px;
+    }
+    .social-text{
+        color: $white;
+        font-weight: 500;
+    }
+}

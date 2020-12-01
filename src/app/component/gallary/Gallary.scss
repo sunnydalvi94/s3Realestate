@@ -1,0 +1,21 @@
+.gallary-container {
+    overflow: auto;
+    color: $white;
+    height: 100%;
+    text-align: center;
+    color: $black;
+    margin-bottom: 50px;
+
+    .badge-title {
+        text-align: center;
+        font-size: 25px;
+    }
+    .form-wrapper {
+        max-width: 800px;
+        border: 1px solid $lightGray;
+        padding: 20px;
+        border-radius: 10px;
+        margin-top: 20px;
+        margin: 0 auto;
+    }
+}
